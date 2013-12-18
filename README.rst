@@ -40,3 +40,20 @@ It uses cache with the key name `locationstree.locations` and a TTL of 1 week co
 
   # settings.py
   LOCATIONSTREE_CACHE_TTL = 60 * 60 * 24 # 1 day
+
+
+Levels
+======
+
+Defines a name for each `level` defined in a fixture file in case you
+want to do something like filtering:
+
+.. code:: python
+
+    class MyModel(models.Model):
+        coverage_region = TreeForeignKey(
+            'locationstree.Location',
+            limit_choices_to={'level': locationstree.levels.CHILE['region']}
+            )
+
+This just make easier to filter `level` by "region" to limit choices.
