@@ -4,6 +4,12 @@ Django Locations Tree
 
 Simple application for location field as TreeForeignKey (see django-mptt) with form field.
 
+Install
+=======
+
+::
+
+  pip install django-locationstree
 
 Usage
 =====
@@ -41,6 +47,12 @@ It uses cache with the key name `locationstree.locations` and a TTL of 1 week co
   # settings.py
   LOCATIONSTREE_CACHE_TTL = 60 * 60 * 24 # 1 day
 
+Fixtures
+========
+
+Chile
+-----
+`chile.json`: Defines all regions and it corresponding comunes
 
 Levels
 ======
