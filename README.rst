@@ -11,6 +11,8 @@ Install
 
   pip install django-locationstree
 
+  python manage.py migrate
+
 Usage
 =====
 
@@ -49,6 +51,8 @@ It uses cache with the key name `locationstree.locations` and a TTL of 1 week co
 
 Fixtures
 ========
+Call `python manage.py loaddata <fixture_name>` to load the fixture
+into your database.
 
 Chile
 -----
