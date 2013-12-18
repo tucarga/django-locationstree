@@ -56,7 +56,7 @@ into your database.
 
 Chile
 -----
-`chile.json`: Defines all regions and it corresponding comunes
+`chile.json`: Defines all regions and its corresponding comunes
 
 Levels
 ======
